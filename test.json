@@ -1,0 +1,233 @@
+[
+	{
+		"city": "Москва",
+		"temperature": "+3",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Санкт-Петербург",
+		"temperature": "-5",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Владивосток",
+		"temperature": "+1",
+		"wind": "3 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Омск",
+		"temperature": "+10",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Красноярск",
+		"temperature": "+3",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Иркутск",
+		"temperature": "-10",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Екатеринбург",
+		"temperature": "+3",
+		"wind": "7 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Челябинск",
+		"temperature": "-8",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Норильск",
+		"temperature": "-10",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Киров",
+		"temperature": "-5",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Грозный",
+		"temperature": "+1",
+		"wind": "3 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Махачкала",
+		"temperature": "+18",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Архангельск",
+		"temperature": "+20",
+		"wind": "5 м/с",
+		"atmospherePressure": "738 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Иркутск",
+		"temperature": "-10",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Воронеж",
+		"temperature": "-10",
+		"wind": "7 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Сыктывкар",
+		"temperature": "+15",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Иваново",
+		"temperature": "+3",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Орёл",
+		"temperature": "-5",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Ставрополь",
+		"temperature": "+1",
+		"wind": "3 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Оренгбург",
+		"temperature": "+10",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Тюмень",
+		"temperature": "+3",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Пермь",
+		"temperature": "-10",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Уфа",
+		"temperature": "+3",
+		"wind": "7 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Калининград",
+		"temperature": "-8",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Волгоград",
+		"temperature": "-12",
+		"wind": "5 м/с",
+		"atmospherePressure": "730 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Чита",
+		"temperature": "-5",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Бийск",
+		"temperature": "+1",
+		"wind": "3 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Барнаул",
+		"temperature": "-10",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Томск",
+		"temperature": "+9",
+		"wind": "5 м/с",
+		"atmospherePressure": "738 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Казань",
+		"temperature": "-8",
+		"wind": "6 м/с",
+		"atmospherePressure": "750 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+	},
+	{
+		"city": "Зеленоград",
+		"temperature": "+10",
+		"wind": "7 м/с",
+		"atmospherePressure": "770 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	},
+	{
+		"city": "Саратов",
+		"temperature": "+15",
+		"wind": "4 м/с",
+		"atmospherePressure": "745 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+	},
+	{
+		"city": "Хабаровск",
+		"temperature": "+9",
+		"wind": "5 м/с",
+		"atmospherePressure": "738 мм",
+		"image": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+	}
+]
