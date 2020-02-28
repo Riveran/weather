@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import autocmpleteReducer from './autocomplete';
+import dashboardReducer from './dashboard';
 
 export const rootReducer = combineReducers({
-	autocomplete: autocmpleteReducer
+	autocomplete: autocmpleteReducer,
+	dashboard: dashboardReducer
 })
