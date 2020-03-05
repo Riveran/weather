@@ -3,12 +3,13 @@ import Grid from '@material-ui/core/Grid';
 import { connect } from 'react-redux';
 import ItemCard from './item.card';
 import { deleteItem } from '../store/actions/actions';
+import { getDashboardDataByFilter } from '../store/selectors/dashboard.selector';
 
-function Dashboard({dashboardData: {data}, deleteItem}) {
-	if(!data.length) {
+function Dashboard({dashboardData, deleteItem}) {
+	if(!dashboardData.length) {
 		return (
-			<Grid container item justify='center'>
-				Don't have data for view
+			<Grid container item justify='center' alignItems='center' style={{minHeight: '500px'}}>
+				Нет данных для отображения.
 			</Grid>
 			)
 	}
@@ -18,7 +19,7 @@ function Dashboard({dashboardData: {data}, deleteItem}) {
 	}
 
 	function getListCard () {
-		const listCard = data.map(item => (
+		const listCard = dashboardData.map((item) => (
 			<ItemCard key={item.id} item={item} onDeleteClick={onDeleteClick}/>
 		))
 		return listCard;
@@ -32,7 +33,7 @@ function Dashboard({dashboardData: {data}, deleteItem}) {
 }
 
 const mapStateToProps = (state) => ({
-	dashboardData: state.dashboard
+	dashboardData: getDashboardDataByFilter(state)
 })
 
 const mapDispatchToProps = {

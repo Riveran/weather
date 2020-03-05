@@ -7,37 +7,59 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import IconButton from '@material-ui/core/IconButton';
 import { AddCircleOutline } from '@material-ui/icons';
+import Snackbar from '@material-ui/core/Snackbar';
 
-function AutocompleteComponent({autocompleteData, getAutocompleteData, addItemOnPage}) {
+function AutocompleteComponent({autocompleteData, dashboardData, getAutocompleteData, addItemOnPage}) {
+	const [value, setValue] = useState('');
 	const [open, setOpen] = useState(false);
 	const [selectItem, setSelectItem] = useState(false);
+	const [isItemUse, setIsItemUse] = useState(false);
 
 	useEffect(() => {
 		if(open) {
 			getAutocompleteData();
 		}
-	}, [open])
+	}, [open]);
 
 	function handleCick (event, value) {
+		setIsItemUse(false);
 		setSelectItem(value);
 	}
 
+	function checkOnDuplicate () {
+		const { id } = selectItem;
+
+		const isDuplucate = dashboardData.find(item => (
+			item.id === id
+		))
+
+		return !!isDuplucate;
+	}
+
 	function addItem () {
+		const isDuplucate = checkOnDuplicate();
+
+		if (isDuplucate) {
+			setValue('');
+			setIsItemUse(true);
+			return setSelectItem(false);
+		}
+
 		addItemOnPage(selectItem);
+		setValue('');
+		setSelectItem(false);
+	}
+
+	function handleInputChange (event, value) {
+		setValue(value);
 	}
 
 	return (
-		<Grid
-			container
-			justify='flex-start'
-			wrap='nowrap'
-			spacing={2}
-			alignItems='center'
-			style={{marginTop: '100px'}}
-		>
-			<Grid container item xs={12} md={3}>
+		<>
+			<Grid item xs={10}>
 				<Autocomplete
-					style={{width: '100%'}}
+					inputValue={value}
+					clearText='clear'
 					open={open}
 					onOpen={() => {
 						setOpen(true);
@@ -46,6 +68,7 @@ function AutocompleteComponent({autocompleteData, getAutocompleteData, addItemOn
 						setOpen(false);
 					}}
 					onChange={handleCick}
+					onInputChange={handleInputChange}
 					options={autocompleteData.data}
 					getOptionLabel={option => option.city}
 					renderInput={params => (
@@ -68,17 +91,28 @@ function AutocompleteComponent({autocompleteData, getAutocompleteData, addItemOn
 				/>
 			</Grid>
 
-			<Grid>
+			<Grid item xs={2}>
 				<IconButton disabled={!selectItem} onClick={addItem}>
 					<AddCircleOutline />
 				</IconButton>
 			</Grid>
-		</Grid>
+
+			<Snackbar
+        anchorOrigin={{
+					vertical: 'bottom',
+					horizontal: 'center'
+				}}
+				open={isItemUse}
+				autoHideDuration={4000}
+        message={`Город уже добавлен`}
+      />
+		</>
 	)
 }
 
 const mapStateToProps = (state) => ({
-	autocompleteData: state.autocomplete
+	autocompleteData: state.autocomplete,
+	dashboardData: state.dashboard.data
 })
 
 const mapDispatchToProps = {
