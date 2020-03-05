@@ -29,17 +29,17 @@ function AutocompleteComponent({autocompleteData, dashboardData, getAutocomplete
 	function checkOnDuplicate () {
 		const { id } = selectItem;
 
-		const isDuplucate = dashboardData.find(item => (
+		const isDuplicate = dashboardData.find(item => (
 			item.id === id
 		))
 
-		return !!isDuplucate;
+		return !!isDuplicate;
 	}
 
 	function addItem () {
-		const isDuplucate = checkOnDuplicate();
+		const isDuplicate = checkOnDuplicate();
 
-		if (isDuplucate) {
+		if (isDuplicate) {
 			setValue('');
 			setIsItemUse(true);
 			return setSelectItem(false);
